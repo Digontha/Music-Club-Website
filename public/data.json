@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "service_name": "Live Band Performance",
+        "img": "https://i.ibb.co/7GcbtJb/m1.jpg",
+        "title": "Energetic Live Music Experience",
+        "details": "Get the crowd moving with a live band performance featuring talented musicians and an electrifying atmosphere. Experience the thrill of live music with a mix of your favorite genres. From rock anthems that make you want to jump and shout to soulful ballads that touch the deepest parts of your soul, our live band performance promises a musical journey like no other.Feel the pulse of the drums, the groove of the bass, the wail of the guitar, and the power of the vocals as our skilled musicians pour their heart and soul into every note. With a repertoire that spans decades and genres, there's something for everyone in this musical extravaganza. Let the energy of the crowd amplify the music, creating an immersive experience that will leave you wanting more.",
+        "price": 8000,
+        "type": "Music"
+    },
+    {
+        "id": 2,
+        "service_name": "DJ Party Night",
+        "img": "https://i.ibb.co/2PbHxVK/m2.jpg",
+        "title": "DJ Beats and Dancing",
+        "details": "Host an epic party with a professional DJ spinning the latest tracks and classic hits. Dance the night away with friends and colleagues, creating unforgettable memories. Our skilled DJ is a maestro at reading the crowd, seamlessly blending various genres and beats to keep the dance floor alive and buzzing. Feel the pulsating rhythm in your veins as the bass thumps and the melodies envelop you. The music becomes a language that unites everyone, transcending boundaries and backgrounds. Whether you're a fan of house beats that make your heart race or the smooth transitions of R&B that make you sway, our DJ will cater to all your musical cravings.The ambiance is electric, charged with the excitement of the night. Multicolored lights dance to the rhythm, adding to the party's vibrant energy. ",
+        "price": 6000,
+        "type": "Music"
+    },
+    {
+        "id": 3,
+        "service_name": "Karaoke Extravaganza",
+        "img": "https://i.ibb.co/qY3rCM0/m4.jpg",
+        "title": "Sing Your Heart Out",
+        "details": "Organize a lively karaoke event where guests can showcase their singing talent. Let the spotlight shine on participants as they belt out their favorite songs. It's a night of entertainment, laughter, and the joy of letting your inner rockstar shine.Whether you're a seasoned performer or a first-timer, karaoke is the ultimate equalizer. Step up to the microphone, feel the rush of the stage, and let your voice fill the room. The cheers and applause from the audience become your backing track, boosting your confidence and adding to the excitement.The song selection is vast, catering to various tastes and styles. From classic ballads that tug at the heartstrings to energetic anthems that make you want to jump and dance, there's a song for every mood and moment. Watch as participants transform into singing sensations, captivating the audience with their renditions.The karaoke event isn't just about singing—it's about camaraderie and connection. Friends cheer for each other, colleagues form impromptu duets, and strangers bond over shared musical tastes. It's a night where inhibitions are left at the door, and the focus is on having a blast.","price": 3500,"type": "Music"
+    },
+    {
+        "id": 4,
+        "service_name": "Themed Music Night",
+        "img": "https://i.ibb.co/8PvbDp8/m3.jpg",
+        "title": "Immersive Musical Themes",
+        "details": "Create a unique music experience with a themed music night. Explore different genres, eras, or cultural music to transport your audience to a different musical world. Immerse yourself in a musical journey that transcends time and borders, inviting everyone to experience the beauty of diverse musical landscapes.Step into a world of musical diversity with our themed music nights. Each event is carefully crafted to take you on a journey through a specific genre, era, or cultural musical heritage. Whether it's the roaring '20s jazz, the psychedelic '60s, the disco fever of the '70s, or the techno beats of the 90s, we curate a night that encapsulates the essence of the chosen theme.Explore the rich tapestry of global music by diving into different cultural themes. From the rhythms of Latin America to the soulful tunes of Africa, our themed nights celebrate the beauty of musical traditions from around the world. Feel the beat of the drums, the melodies of unique instruments, and the richness of languages as you sway to the tunes that cross continents.Dress the part and let the ambiance reflect the theme, creating an immersive experience for everyone. It's not just a musical event; it's a cultural exploration, an opportunity to broaden horizons, and a celebration of the universal language that is music.","price": 5000,"type": "Music"
+    },
+    {
+        "id": 5,
+        "service_name": "Interactive Music Games",
+        "img": "https://i.ibb.co/4Kd6b9h/game.webp",
+        "title": "Play and Bond with Interactive Music Games",
+        "details": "Engage your guests with interactive music games that are not only entertaining but also encourage bonding and friendly competition. From music trivia to musical chairs, our games are sure to add a playful musical twist to your event. Let the games begin, and let the melodies spark joy and excitement among your attendees.Step into a world of musical delight with our interactive music games. Challenge your friends, colleagues, or fellow event-goers to a battle of wits with our engaging music trivia. Test your knowledge of artists, songs, albums, and musical history, all while enjoying a friendly contest of intellect.If you're in the mood for some physical fun, jump into the musical chairs game. Feel the adrenaline rush as the music plays, and the chairs dwindle. It's a test of speed, strategy, and laughter as you compete to secure a chair when the music stops. The last one seated is the musical chairs champion!And for the daring souls, we present 'Guess the Song.' Hum a tune, give a few hints, and let the others guess the song. It's a hilarious game that keeps everyone on their toes, trying to decode musical notes and rhythms.","price": 1800,"type": "Games"
+    },
+    {
+        "id": 6,
+        "service_name": "Serenade Your Special Moments",
+        "img": "https://i.ibb.co/YPfNxbs/M6.jpg",
+        "title": "Make Your Special Moments Unforgettable",
+        "details": "Add a touch of magic to your special moments - proposals, anniversaries, or celebrations - with a personalized musical serenade. Our musicians will create a romantic and memorable atmosphere with beautiful live music tailored to your occasion. Let the melodies become the soundtrack of your cherished memories, making every moment truly unforgettable.Picture this: a soft, elegant melody begins to play, setting the stage for a magical experience. Our talented musicians, equipped with instruments and heartfelt passion, serenade you and your loved one with your favorite songs or melodies that hold a special place in your hearts. It's an intimate performance that resonates with the essence of your relationship.For a proposal, imagine the joy and surprise on your partner's face as the music starts, leading to that pivotal moment. The serenade adds a dreamlike quality to the atmosphere, making the proposal even more romantic and emotionally charged.During an anniversary celebration, let the music be a reflection of your journey together - the highs, the lows, and the beautiful moments that define your love story. The serenade becomes a symbol of your enduring love and a beautiful memory to cherish.At any celebration, a personalized musical serenade elevates the event to a new level. It's a gift that goes beyond material objects, leaving an indelible mark on the hearts of those you love. Let our musicians craft a melody that speaks to your soul and celebrates the uniqueness of your relationship.","price": 2500,"type": "Music"
+    }
+]
