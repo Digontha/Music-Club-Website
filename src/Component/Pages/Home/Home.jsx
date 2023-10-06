@@ -2,6 +2,8 @@ import { useLoaderData, } from "react-router-dom";
 import Banner from "./HomeElement/Banner";
 import Service from "./HomeElement/Service";
 import Future from "./HomeElement/Future";
+import Review from "./HomeElement/Review";
+import Footer from "./HomeElement/Footer";
 
 
 const Home = () => {
@@ -22,6 +24,8 @@ const Home = () => {
                 }
              </div>
               <Future></Future>
+              <Review></Review>
+              <Footer></Footer>
         </div>
     );
 };
