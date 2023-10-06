@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Service = ({service}) => {
     console.log(service);
    
-    const {id,service_name,img,title,details,price} = service || {};
+    const {id,service_name,img,details,price} = service || {};
 
     return (
     <>
