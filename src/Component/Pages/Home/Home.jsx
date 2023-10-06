@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, } from "react-router-dom";
 import Banner from "./HomeElement/Banner";
 import Service from "./HomeElement/Service";
 import Future from "./HomeElement/Future";
@@ -7,7 +7,8 @@ import Future from "./HomeElement/Future";
 const Home = () => {
 
     const data = useLoaderData()
-    console.log(data);
+  
+
 
     return (
         <div>
