@@ -40,7 +40,7 @@ const Navbar = () => {
                         {Links}
                     </ul>
                 </div>
-                <a className=" text-2xl text-red-400 font-bold text normal-case ">Music Club</a>
+                <a className=" text-2xl text-red-600 font-bold text normal-case ">Music Club</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
