@@ -15,7 +15,7 @@ const Home = () => {
              <Banner></Banner>
 
              <h1 className='text-2xl text-center font-serif font-medium  mt-5 underline'>Our Service</h1>
-             <div className="grid grid-cols-3 gap-5 w-[90%] mx-auto">
+             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 w-[90%] mx-auto">
              
                 {
                     data.map(services=> <Service key={services.id} service={services}></Service>)
