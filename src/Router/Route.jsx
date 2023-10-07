@@ -6,6 +6,7 @@ import ServiceDetails from "../Component/Pages/Home/HomeElement/ServiceDetails";
 import Login from "../Component/Login/Login";
 import Register from "../Component/Register/Register";
 import PrivateRouter from "../Component/PrivateRouter/PrivateRouter";
+import Contact from "../Component/Contact/Contact";
 
 const router = createBrowserRouter([
     {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
             ,
             {
                 path:"/about",
-                element:<About></About>
+                element:<PrivateRouter><About></About></PrivateRouter>
             },
             {
                 path:"/login",
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path:"/register",
                 element:<Register></Register>
+            },
+            {
+                path:"/contact",
+                element:<PrivateRouter><Contact></Contact></PrivateRouter>
             }
         ]
     }

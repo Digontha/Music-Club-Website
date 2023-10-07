@@ -28,6 +28,17 @@ const Navbar = () => {
                 about
             </NavLink></li>
 
+        <li className="text-base">
+
+            <NavLink
+                to="/contact"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? " underline font-extrabold" : ""
+                }
+            >
+                contact
+            </NavLink></li>
+
 
     </>
 

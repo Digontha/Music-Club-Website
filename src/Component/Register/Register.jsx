@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+
 import { updateProfile } from "firebase/auth";
+import swal from "sweetalert";
 
 const Register = () => {
         
@@ -19,18 +19,22 @@ const Register = () => {
      console.log(name ,image, email, password);
 
     if(!/^(?=.*[A-Z])(?=.*[!@#$%^&*()_+={}\[\]:;"'<>,.?/\\|`])[A-Za-z0-9!@#$%^&*()_+={}\[\]:;"'<>,.?/\\|`]{7,}$/.test(password)){
-      toast("password must be at least 6 characters one capital letter and one special letter")
+     
+      swal("error", "password must be at least 6 characters one capital letter and one special letter", "error");
     }else{
       createUser(email, password,name, image)
       .then(res=>{
        console.log(res.user);
+       swal("success", "Your account create successfully", "success");
        updateProfile(res.user, { displayName: name, photoURL: image })
                     .then(()=> {
                       
                     })
+          e.target.reset()
       })
-      .catch(error=>{
-       console.log(error);
+      .catch(()=>{
+     
+       swal("error", "something went wrong", "error");
       })
     }
 
@@ -80,7 +84,7 @@ const Register = () => {
           </div>
         </div>
         </div>
-      <ToastContainer></ToastContainer>
+   
       </>
         
     );
