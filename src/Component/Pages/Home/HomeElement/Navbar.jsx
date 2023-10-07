@@ -63,7 +63,7 @@ const Navbar = () => {
                         {Links}
                     </ul>
                 </div>
-                <a className=" text-2xl text-red-600 font-bold text normal-case ">Music Club</a>
+                <a className=" lg:text-2xl text-red-600 font-bold text normal-case ">Music Club</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -73,7 +73,7 @@ const Navbar = () => {
             <div className="navbar-end gap-2">
                 {
                     user ? 
-                     <><p className="font-semibold">{user.displayName}</p><img className="w-10 h-10 rounded-full" src={user.photoURL} alt="" /> <Link><button onClick={handleLogOut} className="btn btn-warning btn-sm">Sign out</button></Link></>
+                     <><div className="space-y-3 lg:flex items-center gap-2"><p className="font-semibold">{user.displayName}</p><img className="w-10 h-10 rounded-full" src={user.photoURL} alt="" /> <Link><button onClick={handleLogOut} className="btn btn-warning btn-sm">Sign out</button></Link></div></>
 
                     :  
                     

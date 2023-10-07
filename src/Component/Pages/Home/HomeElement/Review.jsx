@@ -4,7 +4,7 @@ const Review = () => {
     return (
        <>
              <h1 className='text-2xl text-center font-serif font-medium  mt-5 underline'>Review</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-6 w-[90%] mx-auto">
 
             <div className="card  bg-neutral text-neutral-content">
                 <div className="card-body items-center space-y-4">

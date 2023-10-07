@@ -5,7 +5,7 @@ import {MdNotificationsActive} from 'react-icons/md';
 import {BsPeopleFill} from 'react-icons/bs';
 const Future = () => {
     return (
-        <div className='py-10'>
+        <div className='py-10 w-[90%] mx-auto'>
 
                  <h1 className='text-3xl font-medium underline text-center mt-10'>Our Features</h1>
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1'>
