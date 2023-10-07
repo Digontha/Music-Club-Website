@@ -3,7 +3,7 @@
 const Banner = () => {
       
     const BgIMG = {
-        backgroundImage: `url('../../../../../public/Banner.png')`,
+        backgroundImage: `url('https://i.ibb.co/pJPgGVQ/Banner.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

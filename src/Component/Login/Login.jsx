@@ -32,7 +32,7 @@ const Login = () => {
             })
             .catch(()=>{
             
-             swal("Error", "something went wrong", "error");
+             swal("Error", "Your email or  password dose not match", "error");
             })
           
           
