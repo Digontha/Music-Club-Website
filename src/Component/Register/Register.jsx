@@ -1,13 +1,13 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-
+import {FcGoogle} from 'react-icons/fc';
 import { updateProfile } from "firebase/auth";
 import swal from "sweetalert";
 
 const Register = () => {
         
-  const {createUser} = useContext(AuthContext)
+  const {createUser,googleLogin} = useContext(AuthContext)
 
   const handleRegister = (e) =>{
 
@@ -42,7 +42,15 @@ const Register = () => {
      
      
   }
-
+  const handleGoogle=()=>{
+    googleLogin()
+    .then(res=>{
+      console.log(res.user);
+    })
+    .catch(error=>{
+      console.log(error);
+    })
+  }
 
     return (
       <>
@@ -81,7 +89,11 @@ const Register = () => {
               </div>
             </form>
             <Link className="text-center" to="/login"><p>Have a account? <span className="font-bold btn btn-link">login</span></p></Link>
+            <div className="p-5">
+            <button onClick={handleGoogle} className="btn btn-sm btn-neutral w-full"><FcGoogle></FcGoogle> Google</button>
+            </div>
           </div>
+         
         </div>
         </div>
    

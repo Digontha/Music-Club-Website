@@ -1,14 +1,14 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-
+import { FcGoogle } from "react-icons/fc";
 import swal from "sweetalert";
 
 
 
 const Login = () => {
     
-  const {signInUser,user} = useContext(AuthContext)
+  const {signInUser,user,googleLogin} = useContext(AuthContext)
   console.log(user);
 
   const location = useLocation()
@@ -40,7 +40,15 @@ const Login = () => {
        
          
   }
-
+  const handleGoogle=()=>{
+    googleLogin()
+    .then(()=>{
+      
+    })
+    .catch(()=>{
+     
+    })
+  }
 
     return (
      <>
@@ -66,6 +74,9 @@ const Login = () => {
               </div>
             </form>
             <Link className="text-center" to="/register"><p>Haven't any account? <span className="font-bold btn btn-link">register</span></p></Link>
+            <div className="p-5">
+            <button onClick={handleGoogle} className="btn btn-sm btn-neutral w-full"><FcGoogle></FcGoogle> Google</button>
+            </div>
           </div>
         </div>
      
