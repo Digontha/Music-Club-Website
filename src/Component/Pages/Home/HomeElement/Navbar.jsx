@@ -73,23 +73,19 @@ const Navbar = () => {
             <div className="navbar-end gap-2">
                 {
                     user ?
-                        // <><div className="space-y-3 lg:flex items-center gap-2"><p className="font-semibold">{user.displayName}</p><img className="w-10 h-10 rounded-full" src={user.photoURL} alt="" /> <Link><button onClick={handleLogOut} className="btn btn-warning btn-sm">Sign out</button></Link></div></>
 
-                        // :
-
-                        // <><Link to="/login"><button className="btn btn-warning btn-sm">Login</button></Link></>
                         <div className="dropdown dropdown-bottom dropdown-end">
-                        <label tabIndex={0} ><img className="w-10 h-10 rounded-full" src={user.photoURL} alt="" /></label>
-                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box lg:w-52">
-                        <p className="font-semibold">{user.displayName}</p>
-                        <Link><button onClick={handleLogOut} className="btn btn-warning btn-sm">Sign out</button></Link>
-                        </ul>
-                    </div>
+                            <label tabIndex={0} ><img className="w-10 h-10 rounded-full" src={user.photoURL} alt="" /></label>
+                            <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box lg:w-52">
+                                <p className="font-semibold">{user.displayName}</p>
+                                <Link><button onClick={handleLogOut} className="btn btn-warning btn-sm">Sign out</button></Link>
+                            </ul>
+                        </div>
 
-                    :
-                    <Link to="/login"><button className="btn btn-warning btn-sm">Login</button></Link>
+                        :
+                        <Link to="/login"><button className="btn btn-warning btn-sm">Login</button></Link>
                 }
-              
+
 
 
             </div>
