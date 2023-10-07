@@ -19,7 +19,7 @@ const ServiceDetails = () => {
                {
                 filter.map(service=><>
                   <img className=" rounded-xl w-full" src={service.img} alt="" /> 
-                  <h1 className='text-2xl text-center font-serif font-medium  mt-5 underline'>{service.title}</h1>
+                  <h1 className='text-2xl  text-center font-serif font-medium  mt-5 underline'>{service.title}</h1>
                   <p className="mt-8">{service.details}</p>
                 </>)
                }
