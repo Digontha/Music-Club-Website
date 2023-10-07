@@ -43,10 +43,11 @@ const Login = () => {
   const handleGoogle=()=>{
     googleLogin()
     .then(()=>{
-      
+      swal("Logged", "You login successfully", "success");
+      navigate(location?.state? location.state : "/")
     })
     .catch(()=>{
-     
+      swal("Error", "something went wrong", "error");
     })
   }
 

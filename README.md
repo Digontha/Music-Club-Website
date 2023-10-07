@@ -1,8 +1,9 @@
-# React + Vite
+- 2 Tell About  different five features and functionalities of my website.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My website is one Concert Event Management. I provide concert event management services to my users here. I will tell you five futures of my website.
+- First of all my website has login and registration router, where users can create their user id.
+- Second, I have two extra routes, which are private routes that you cannot enter unless you are logged in.
+- Third I have a service details route where you must log in to enter. 
+- Fourth future is if you log in then your image and name will be seen in the new bar. 
+- The fifth future is that I have a sign out button where you click to log out.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

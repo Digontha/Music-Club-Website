@@ -44,11 +44,13 @@ const Register = () => {
   }
   const handleGoogle=()=>{
     googleLogin()
-    .then(res=>{
-      console.log(res.user);
+    .then(()=>{
+    
+      swal("success", "Your account create successfully", "success");
     })
-    .catch(error=>{
-      console.log(error);
+    .catch(()=>{
+    
+      swal("error", "something went wrong", "error");
     })
   }
 
