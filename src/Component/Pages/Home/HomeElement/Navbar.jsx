@@ -1,8 +1,10 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../../AuthProvider/AuthProvider";
 
 
 const Navbar = () => {
-
+    const { user,logOut } = useContext(AuthContext)
     const Links = <>
 
         <li className="text-base"><NavLink
@@ -11,23 +13,33 @@ const Navbar = () => {
                 isPending ? "pending" : isActive ? "underline font-extrabold" : ""
             }
         >
-           Home
+            Home
         </NavLink></li>
 
 
         <li className="text-base">
-            
+
             <NavLink
-            to="/about"
-            className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? " underline font-extrabold" : ""
-            }
-        >
-            about
-        </NavLink></li>
-       
+                to="/about"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? " underline font-extrabold" : ""
+                }
+            >
+                about
+            </NavLink></li>
+
 
     </>
+
+   const handleLogOut = () => {
+    logOut()
+    .then(()=>{
+
+    })
+    .catch(()=>{
+
+    })
+   }
 
     return (
         <div className="navbar bg-red-100 shadow-lg px-[5%]">
@@ -44,11 +56,19 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                   {Links}
+                    {Links}
                 </ul>
             </div>
-            <div className="navbar-end">
-               <Link to="/login"><button className="btn btn-success btn-sm">Login</button></Link>
+            <div className="navbar-end gap-2">
+                {
+                    user ? 
+                     <><p className="font-semibold">{user.displayName}</p><img className="w-10 h-10 rounded-full" src={user.photoURL} alt="" /> <Link><button onClick={handleLogOut} className="btn btn-warning btn-sm">Sign out</button></Link></>
+
+                    :  
+                    
+                    <><Link to="/login"><button className="btn btn-warning btn-sm">Login</button></Link></>
+                }
+              
             </div>
         </div>
     );
